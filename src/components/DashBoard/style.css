@@ -5,3 +5,6 @@
   flex-wrap: wrap;
   gap: 20px;
 }
+.currentTime {
+  margin-bottom: 50px;
+}

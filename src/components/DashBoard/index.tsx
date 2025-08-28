@@ -18,6 +18,11 @@ const DashBoard = () => {
       fetchData();
     }, 30000);
   }, []);
+  const [currentTime, setCurrentTime] = useState(new Date());
+
+  setInterval(() => {
+    setCurrentTime(new Date());
+  }, 1000);
 
   const fetchData = () => {
     axios
@@ -26,10 +31,17 @@ const DashBoard = () => {
   };
 
   return (
-    <div className="dashBoardContainer">
-      {dashBoardData.map((item) => (
-        <DashBoardCard data={item} fetchData={fetchData} />
-      ))}
+    <div className="">
+      <p className="currentTime">
+        {currentTime.toDateString()}
+        {"    "}
+        {currentTime.toLocaleTimeString()}
+      </p>
+      <div className="dashBoardContainer">
+        {dashBoardData.map((item) => (
+          <DashBoardCard data={item} fetchData={fetchData} />
+        ))}
+      </div>
     </div>
   );
 };
