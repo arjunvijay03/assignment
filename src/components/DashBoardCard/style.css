@@ -1,0 +1,59 @@
+.cardContainer {
+  width: 250px;
+  height: 150px;
+  position: relative;
+  border-radius: 10px;
+  padding: 10px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.4s;
+}
+.cardContainer:hover {
+  scale: 1.1;
+}
+.iconContainer {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  background-color: black;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topSection {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 5px;
+}
+.title {
+  font-size: 15px;
+  color: #b2adad;
+}
+.value {
+  font-size: 25px;
+}
+.bottomSection {
+  padding: 10px;
+  border-top: 1px solid #efefef;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.subText {
+}
+.mainIcon {
+  width: 30px;
+  height: 30px;
+}
+.bottomIcon {
+  width: 20px;
+  height: 20px;
+}
+.refreshButton {
+}
